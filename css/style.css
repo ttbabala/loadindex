@@ -1,0 +1,43 @@
+html body{ font:83.3333333% Tahoma,STHeiti,"Microsoft YaHei",Helvetica,Verdana,sans-serif; letter-spacing:1px; color:#fff; background:#5FA83F; }
+a { font-size:68.75%; color:#fff; text-decoration: none;}
+a:hover {color:bisque; text-decoration: none;}
+li {list-style-type: none;}
+#logo{ margin:0 auto; width: 11%; height:11%; margin-top:10%; }
+@media screen and (min-width: 320px) and (max-width: 480px){
+    #logo{ margin:0 auto; width:20%; height:20%; margin-top:10%; }
+    #logo-text{ margin: 0 auto; margin-top: 1.0rem; width: 30%; height: auto; }
+    #callboard { display:none; } 
+}
+
+#logo img{ width: 100%; height: auto; max-width: 100%; display: block; }
+#logo-text{ margin: 0 auto; margin-top: 1.0rem; width: 13%; height: auto; }
+#logo-text img{  width: 100%; height: auto; max-width: 100%; display: block; }
+
+/*公告栏滚动特效*/
+#callboard { margin-left:40.6%; height:auto; overflow:hidden; } 
+#callboard ul { padding:0; } 
+#callboard li { padding:0; line-height:24px; height:24px; list-style: none;} 
+
+#button-download{ width:20%; margin:0 auto; margin-top: 0.5rem; }
+.i-bbt-left{ float:left; width:40%; height:auto; border:1px solid #fff; text-align: center; display:block; }
+.i-bbt-right{ float:right; width:40%; height:auto; border:1px solid #fff; text-align: center; display:block; }
+
+/*底部导航栏*/
+#nav{width:100%;height:60px;position:absolute;bottom:0;left:0;z-index:2}
+#nav ul{width:100%;max-width:1000px;margin:0 auto;position:relative;z-index:2}
+#nav li{width:20%;float:left}
+#nav a{display:block;height:60px;line-height:60px;cursor:pointer;color:#b1b1b1;-webkit-transition:background .3s ease-out;-moz-transition:background .3s ease-out;-ms-transition:background .3s ease-out;-o-transition:background .3s ease-out;transition:background .3s ease-out;overflow:hidden;outline:0}
+#nav a:hover{color:#fff}
+#nav #link-about:hover{background:#226cd4}
+#nav #link-log:hover{background:#c33}
+#nav #link-guide:hover{background:#3aa624}
+#nav #link-comment:hover{background:#f2ca00}
+#nav #link-app:hover{background:#c145cc}
+#nav a .link-icon{width:20px;height:20px;margin:20px 8px 0 0;background-image:url(../img/icons-nav_078b02e.png);overflow:hidden}
+#nav a:hover .link-icon{background-image:url(../img/icons-nav-active_8e6f1c1.png)}
+#nav #link-about .link-icon{background-position:0 0}
+#nav #link-log .link-icon{background-position:-20px 0}
+#nav #link-guide .link-icon{background-position:-40px 0}
+#nav #link-comment .link-icon{background-position:-60px 0}
+#nav #link-app .link-icon{background-position:-80px 0}
+#nav-overlay{width:100%;height:100%;position:absolute;top:0;left:0;z-index:1;background:#000;opacity:.8;filter:alpha(opacity=80)}
